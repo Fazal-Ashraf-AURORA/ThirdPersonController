@@ -11112,8 +11112,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 15
   aimDuration: 0.2
-  firerate: 0.09
-  maxAmmo: 30
   aimLayer: {fileID: 1056565222}
 --- !u!114 &837612518
 MonoBehaviour:
@@ -15427,7 +15425,7 @@ GameObject:
   - component: {fileID: 1227249136}
   - component: {fileID: 1227249135}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CrossHair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20793,8 +20791,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629643214}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13989937, y: 0.00000003630671, z: -0.000000005129733, w: 0.9901657}
-  m_LocalPosition: {x: 0.939, y: 2.588591, z: 0.17032367}
+  m_LocalRotation: {x: 0.13989939, y: -0.00000003630671, z: 0.0000000051297335, w: 0.9901657}
+  m_LocalPosition: {x: 0.939, y: 2.588591, z: 0.17032373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23804,7 +23802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827876577}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13989937, y: 0.000000015155305, z: -0.0000000021412754, w: 0.99016577}
+  m_LocalRotation: {x: 0.13989939, y: -0.000000021151406, z: 0.0000000029884577, w: 0.99016577}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -49234,6 +49232,7 @@ GameObject:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 296921536}
   - {fileID: 1629643219}
   - {fileID: 157769445}
   - {fileID: 4251109587834625}
@@ -49241,4 +49240,3 @@ SceneRoots:
   - {fileID: 4849537914288677}
   - {fileID: 1783100293}
   - {fileID: 1227249138}
-  - {fileID: 296921536}
