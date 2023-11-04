@@ -39,7 +39,10 @@ public class CharacterAiming : MonoBehaviour {
 
             isFiring = true;
             weapon.StartFiring();
+        }
 
+        if (weapon.isFiring) {
+            weapon.UpdateFiring(Time.deltaTime);
         }
 
         if (Input.GetButtonUp("Fire1")) {

@@ -5,6 +5,8 @@ using UnityEngine;
 public class RaycastWeapon : MonoBehaviour
 {
     public bool isFiring = false;
+    public int fireRate = 25;
+    public float accumulatedTime;
     public ParticleSystem muzzleFlash;
     public ParticleSystem hitEffect;
     public TrailRenderer tracerEffect;
@@ -13,9 +15,20 @@ public class RaycastWeapon : MonoBehaviour
 
     Ray ray;
     RaycastHit hitinfo;
+
     public void StartFiring() {
         isFiring = true;
+        accumulatedTime = 0.0f;
         FireBullet();
+    }
+
+    public void UpdateFiring(float deltaTime) { 
+        accumulatedTime += deltaTime;
+        float fireInterval = 1.0f / fireRate;
+        while (accumulatedTime >= 0.0f) {
+            FireBullet();
+            accumulatedTime -= fireInterval;
+        }
     }
 
     private void FireBullet() {

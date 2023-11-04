@@ -2888,6 +2888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFiring: 0
+  fireRate: 25
+  accumulatedTime: 0
   muzzleFlash: {fileID: 1007788353}
   hitEffect: {fileID: 2655815660342458490}
   tracerEffect: {fileID: 2528406700412170172, guid: d7199723d4bcee44698db52931584d23, type: 3}
@@ -20791,8 +20793,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629643214}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13989939, y: -0.00000003630671, z: 0.0000000051297335, w: 0.9901657}
-  m_LocalPosition: {x: 0.939, y: 2.588591, z: 0.17032373}
+  m_LocalRotation: {x: 0.13989937, y: 0.00000003630671, z: -0.000000005129733, w: 0.9901657}
+  m_LocalPosition: {x: 0.939, y: 2.588591, z: 0.17032367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23802,7 +23804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827876577}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13989939, y: -0.000000021151406, z: 0.0000000029884577, w: 0.99016577}
+  m_LocalRotation: {x: 0.13989937, y: 0.000000015155303, z: -0.0000000021412752, w: 0.99016577}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27754,7 +27756,6 @@ GameObject:
   - component: {fileID: 837612513}
   - component: {fileID: 837612517}
   - component: {fileID: 837612518}
-  - component: {fileID: 95841063756249474}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -29877,19 +29878,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &95841063756249474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268559465586341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c76cf7bb7a656c40b46dacb63fdaac7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxAmmo: 200
 --- !u!137 &137094357271990051
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
